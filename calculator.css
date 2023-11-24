@@ -1,0 +1,87 @@
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: linear-gradient(to right, blue, green);
+}
+.calculator {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(5, 80px) minmax(80px, auto);
+}
+button {
+  border-radius: 50%;
+  background-color: lightseagreen;
+  border: none;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px 5px black, 2px 2px 5px red;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: #64af46;
+}
+button:nth-child(5) {
+  background-color: #4c2c72;
+}
+button:nth-child(5):hover {
+  background-color: #341c4a;
+}
+button:nth-child(9) {
+  background-color: #4c2c72;
+}
+button:nth-child(9):hover {
+  background-color: #341c4a;
+}
+button:nth-child(13) {
+  background-color: #4c2c72;
+}
+button:nth-child(13):hover {
+  background-color: #341c4a;
+}
+button:nth-child(17) {
+  background-color: #4c2c72;
+}
+button:nth-child(17):hover {
+  background-color: #341c4a;
+}
+.output {
+  grid-column: 1 / -1;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.75);
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: 3px solid lightskyblue;
+  box-shadow: inset 2px 2px 20px red;
+}
+.user-output {
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+}
+#equal {
+  background-color: #4c2c72;
+  cursor: pointer;
+  border-radius: 12px;
+  border: none;
+  grid-column: 1 / -1;
+}
+#equal:hover {
+  background-color: #341c4a;
+}
